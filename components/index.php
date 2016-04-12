@@ -42,4 +42,10 @@ function register_web_components() {
         // this depends on bootstrap and ui base theme.
         array('wprsc-bootstrap-theme', 'wprsc-jquery-ui-base'), 
         '0.2.5');
+
+    // font-awesome.
+    $font_awesome_folder = "{$components_folder}/font-awesome";
+    wp_register_style('wprsc-font-awesome',
+        plugins_url("{$font_awesome_folder}/css/font-awesome.css"),
+        array(), '4.5.0');
 }
