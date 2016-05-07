@@ -48,4 +48,13 @@ function register_web_components() {
     wp_register_style('wprsc-font-awesome',
         plugins_url("{$font_awesome_folder}/css/font-awesome.css"),
         array(), '4.5.0');
+
+    // Galleria.io
+    $galleria_folder = "{$components_folder}/galleria";
+    wp_register_script('wprsc-galleria-js',
+        plugins_url("{$galleria_folder}/galleria-1.4.2.min.js"),
+        array('jquery'), '1.4.2');
+    wp_register_script('wprsc-galleria-classic-js',
+        plugins_url("{$galleria_folder}/themes/classic/galleria.classic.min.js"),
+        array('wprsc-galleria-js'), '1.4.2');
 }
