@@ -57,4 +57,10 @@ function register_web_components() {
     wp_register_script('wprsc-galleria-classic-js',
         plugins_url("{$galleria_folder}/themes/classic/galleria.classic.min.js"),
         array('wprsc-galleria-js'), '1.4.2');
+
+    // add wikistrap.js
+    $wikistrap_folder = "{$components_folder}/wikistrap.js";
+    wp_register_script('wprsc-wikistrap-js',
+        plugins_url("{$wikistrap_folder}/dist/wikistrap.js"),
+        array('wprsc-bootstrap-js'), '1.0.0');
 }

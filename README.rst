@@ -22,3 +22,4 @@ list of javascript handle name.
 - wprsc-bootstrap-js
 - wprsc-galleria-js
 - wprsc-galleria-classic-js
+- wprsc-wikistrap-js
