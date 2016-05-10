@@ -52,10 +52,10 @@ function register_web_components() {
     // Galleria.io
     $galleria_folder = "{$components_folder}/galleria";
     wp_register_script('wprsc-galleria-js',
-        plugins_url("{$galleria_folder}/galleria-1.4.2.min.js"),
+        plugins_url("{$galleria_folder}/src/galleria.js"),
         array('jquery'), '1.4.2');
     wp_register_script('wprsc-galleria-classic-js',
-        plugins_url("{$galleria_folder}/themes/classic/galleria.classic.min.js"),
+        plugins_url("{$galleria_folder}/src/themes/classic/galleria.classic.js"),
         array('wprsc-galleria-js'), '1.4.2');
 
     // add wikistrap.js
